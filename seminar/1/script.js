@@ -7,7 +7,7 @@
 <p class="www">text 1</p>
 <p class="www">text 2</p> */
 
-const blok = document.querySelector("#block");
+const blok = document.querySelector("#block"); //("#blok p:first-child");
 const firstChild = blok.children[0];
 console.log(firstChild);
 
