@@ -13,3 +13,17 @@ console.log(firstChild);
 
 const tex = document.querySelector(".www");
 console.log(tex);
+
+/* Дан тег <a class="link" href="#">link text html</a>
+Вам необходимо поменять текст внутри ссылки на “link text js”
+Заменить href, на значение https://developer.mozilla.org/ru/ 
+Дан тег <img class="photo" src="" alt=""> 
+Вам необходимо с помощью js поменять значение src на любое изображение из интернета
+*/
+const lin = document.querySelector(".link");
+lin.textContent = "link text js";
+lin.href = "https://developer.mozilla.org/ru";
+
+const phot = document.querySelector(".photo");
+phot.src =
+  "/seminar/1/img/1662431382_14-kartinkof-club-p-novie-i-krasivie-kartinki-puma-20.jpg";
