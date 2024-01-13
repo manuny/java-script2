@@ -49,7 +49,12 @@ paragraphElement.remove();
 const contenButton = document.querySelector(".contentButton");
 const buttonElement = document.createElement("button");
 buttonElement.textContent = "Отправить";
+contenButton.append(buttonElement);
+count = 0;
+buttonElement.onclick = function () {
+  count++;
+  console.log(count);
+};
 buttonElement.addEventListener("click", () => {
   buttonElement.textContent = "Текст отправлен";
 });
-contenButton.appendChild(buttonElement);
