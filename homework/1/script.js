@@ -10,11 +10,16 @@ cart_linkElement.forEach((element) => {
 const elems = document.querySelectorAll(".card-body .card-link");
 console.log(elems);
 //4. Найти первый попавшийся элемент на странице у которого есть атрибут data-number со значением 50 и вывести его в консоль.
-
+const element = document.querySelector('[data-number="50"]');
+console.log(element);
 //5. Выведите содержимое тега title в консоль.
-
+console.log(document.title);
 //6. Получите элемент с классом "card-title" и выведите его родительский узел в консоль.
-
-//7. Создайте тегp`, запишите внутри него текст "Привет" и добавьте созданный тег в начало элемента, который имеет класс "card".
-
+const pElem = document.querySelector(".card-title").parentNode;
+console.log(pElem);
+//7. Создайте тег p`, запишите внутри него текст "Привет" и добавьте созданный тег в начало элемента, который имеет класс "card".
+const pTag = document.createElement("p");
+pTag.textContent = "Привет";
+document.querySelector(".card").prepend(pTag);
 //8. Удалите тег h6 на странице.
+document.querySelector("h6").remove();
