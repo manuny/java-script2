@@ -20,6 +20,7 @@ console.log(tex);
 Дан тег <img class="photo" src="" alt=""> 
 Вам необходимо с помощью js поменять значение src на любое изображение из интернета
 */
+
 const lin = document.querySelector(".link");
 lin.textContent = "link text js";
 lin.href = "https://developer.mozilla.org/ru";
@@ -39,3 +40,16 @@ const paragraphElement = document.createElement("p");
 paragraphElement.textContent = "Новый текстовый элемент";
 conten.appendChild(paragraphElement);
 paragraphElement.remove();
+
+/*Дан тег <div class="contentButton"></div> 
+Создайте с помощью javascript новый элемент button
+Добавьте текст для кнопки “Отправить”
+При клике на данную кнопку необходимо чтобы текст поменялся на “Текст отправлен”*/
+
+const contenButton = document.querySelector(".contentButton");
+const buttonElement = document.createElement("button");
+buttonElement.textContent = "Отправить";
+buttonElement.addEventListener("click", () => {
+  buttonElement.textContent = "Текст отправлен";
+});
+contenButton.appendChild(buttonElement);
