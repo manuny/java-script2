@@ -19,6 +19,31 @@ messBtnEl.addEventListener("click", (e) => {
   messEl.classList.add("animate_animated", "animate_fadeInLeftBig");
   messEl.style.visibility = "visible";
 });
+
 /*3. Необходимо при отправке формы проверить, заполнены ли все поля в этой форме. Если какое-либо поле не заполнено, форма не должна отправляться, также должны быть подсвечены незаполненные поля (необходимо поставить класс error незаполненным полям). Как только пользователь начинает заполнять какое-либо поле, необходимо, при вводе в данное поле, произвести проверку:
 - Если поле пустое, необходимо данное поле подсветить (поставить класс error данному полю).
 - Если поле было чем-либо заполнено, подсветку (класс error) необходимо убрать. */
+const findForm = document.querySelector(".form");
+const findAllInputs = document.querySelectorAll(".form-control");
+
+findForm.addEventListener("input", (e) => {
+  findAllInputs.forEach((element) => {
+    if (element.value === "") {
+      element.classList.add("error");
+      element.style.borderColor = "red";
+    } else {
+      element.classList.remove("error");
+      element.style.borderColor = "";
+    }
+  });
+});
+
+findForm.addEventListener("submit", (e) => {
+  findAllInputs.forEach((element) => {
+    if (element.value === "") {
+      element.classList.add("error");
+      element.style.borderColor = "red";
+      e.preventDefault();
+    }
+  });
+});
