@@ -1,0 +1,20 @@
+* {
+	margin: 0;
+	padding: 0;
+  }
+  
+  .product {
+	margin-top: 319px;
+	margin-left: 230px;
+		display: flex;
+		flex-direction: row;
+
+  }
+  .product__info {
+	padding-top: 22px;
+	padding-left: 32px;
+  }
+ .product__property_price {
+	padding-top: 42px;
+	color: red;
+ } 
