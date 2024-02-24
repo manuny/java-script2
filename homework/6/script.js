@@ -8,28 +8,28 @@ data.forEach(({ imgProduct, name, titel, price }) => {
   productBoxEl.append(productEl);
 
   const productImageEl = document.createElement("img");
-  productImageEl.classList.add = "product__img";
+  productImageEl.className = "product__img";
   productImageEl.setAttribute("src", imgProduct);
   productImageEl.setAttribute("alt", "foto");
   productBoxEl.append(productImageEl);
 
   const productContEl = document.createElement("div");
-  productEl.className = "product__content";
+  productEl.classList.add = "product__content";
   productBoxEl.append(productContEl);
 
   const linkEl = document.createElement("a");
-  linkEl.classList.add = "product__heading";
+  linkEl.className = "product__heading";
   linkEl.href = "#";
   linkEl.textContent = name;
-  productContEl.append(linkEl);
+  productEl.append(linkEl);
 
   const tittelEl = document.createElement("p");
-  tittelEl.classList.add = "product__text";
+  tittelEl.className = "product__text";
   tittelEl.textContent = titel;
-  productContEl.append(tittelEl);
+  productEl.append(tittelEl);
 
   const praceEl = document.createElement("p");
-  praceEl.classList.add = "product__text";
+  praceEl.className = "product__price";
   praceEl.textContent = price;
-  productContEl.append(praceEl);
+  productEl.append(praceEl);
 });

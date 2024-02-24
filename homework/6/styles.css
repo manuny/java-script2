@@ -188,6 +188,9 @@ body {
 	line-height: 16px;
 	color: #000000;
 }
+.product__img {
+	width: 350px;
+}
   
 .product__text {
 	font-style: normal;
