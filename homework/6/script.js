@@ -11,7 +11,7 @@ data.forEach(({ imgProduct, name, titel, price }) => {
   productImageEl.className = "product__img";
   productImageEl.setAttribute("src", imgProduct);
   productImageEl.setAttribute("alt", "foto");
-  productBoxEl.append(productImageEl);
+  productEl.append(productImageEl);
 
   const productContEl = document.createElement("div");
   productEl.classList.add = "product__content";
