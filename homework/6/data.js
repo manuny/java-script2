@@ -6,7 +6,10 @@ const products = `
     "titel":
       "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
     "price": "$52",
-	"imgProduct": "imge/1.jpg"
+	"imgProduct": "imge/1.jpg",
+  "color": "red",
+  "size": "XXXL",
+  "vektor": "img/Vector.svg"
   },
   {
     "id": 2,
@@ -14,7 +17,10 @@ const products = `
     "titel":
       "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
     "price": "$32",
-    "imgProduct": "imge/2.jpg"
+    "imgProduct": "imge/2.jpg",
+    "color": "red",
+    "size": "XL",
+    "vektor": "img/Vector.svg"
   },
   {
     "id": 3,
@@ -22,7 +28,10 @@ const products = `
     "titel":
       "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
     "price": "$50",
-    "imgProduct": "imge/3.jpg"
+    "imgProduct": "imge/3.jpg",
+    "color": "green",
+    "size": "XXXL",
+    "vektor": "img/Vector.svg"
   },
   {
     "id": 4,
@@ -30,7 +39,10 @@ const products = `
     "titel":
       "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
     "price": "$52",
-    "imgProduct": "imge/4.jpg"
+    "imgProduct": "imge/4.jpg",
+    "color": "red",
+    "size": "L",
+    "vektor": "img/Vector.svg"
   },
   {
     "id": 5,
@@ -38,7 +50,10 @@ const products = `
     "titel":
       "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
     "price": "$55",
-    "imgProduct": "imge/5.jpg"
+    "imgProduct": "imge/5.jpg",
+    "color": "blek",
+    "size": "XL",
+    "vektor": "img/Vector.svg"
   },
   {
     "id": 6,
@@ -46,6 +61,9 @@ const products = `
     "titel":
       "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
     "price": "$60",
-    "imgProduct": "imge/6.jpg"
+    "imgProduct": "imge/6.jpg",
+    "color": "red",
+    "size": "M",
+    "vektor": "img/Vector.svg"
   }
 ]`;
